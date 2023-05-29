@@ -19,5 +19,7 @@ function init() {
   }, 2500);
 }
 
+
+
 window.addEventListener('DOMContentLoaded', init);
  
