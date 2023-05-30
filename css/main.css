@@ -279,7 +279,7 @@ header .navbar .nav li a.active {
 }
 
 .styled li::before {
-  content: "🌀 ";
+  content: "🚀 ";
   color: #009ec4;
   text-shadow: none;
 }
@@ -293,36 +293,41 @@ header .navbar .nav li a.active {
 }
 
 .styled li:nth-child(4)::before {
+  content: "💡  ";
+  color: #009ec4;
+}
+
+.styled li:nth-child(5)::before {
   content: "🎨 ";
   color: #ff61b3;
 }
-.styled li:nth-child(5)::before {
+.styled li:nth-child(6)::before {
   content: "🥇 ";
   color: #009ec4;
 }
-.styled li:nth-child(6)::before {
+.styled li:nth-child(7)::before {
   content: "🎯 ";
   color: #ff61b3;
 }
-.styled li:nth-child(7)::before {
+.styled li:nth-child(8)::before {
   content: "📖 ";
   color: #009ec4;
 }
-.styled li:nth-child(8)::before {
+.styled li:nth-child(9)::before {
   content: "✨ ";
   color: #ff61b3;
 }
-.styled li:nth-child(9)::before {
+.styled li:nth-child(10)::before {
   content: "🎬 ";
   color: #009ec4;
 }
 
-.styled li:nth-child(10)::before {
+.styled li:nth-child(11)::before {
   content: "🥽 ";
   color: #009ec4;
 }
 
-.styled li:nth-child(11)::before {
+.styled li:nth-child(12)::before {
   content: "💻 ";
   color: #009ec4;
 }
