@@ -105,7 +105,7 @@ h1 {
 }
 
 .main.loaded {
-  opacity: 1; /* Set the opacity to 1 when the main element has the loaded class */
+  opacity: 1;
   display: block;
 }
 
@@ -237,7 +237,7 @@ header .navbar .nav li a.active {
 
 .about-text {
   text-align: justify;
-  font-size: 2rem; /* Adjust the font size as desired */
+  font-size: 2rem; 
   width: 70%;
 }
 
@@ -354,11 +354,11 @@ header .navbar .nav li a.active {
   width: fit-content;
   cursor: pointer;
   border: 0.125rem solid;
-  border-radius: 0.375rem; /* Converted from 6px */
-  padding: 0.75rem 1.25rem; /* Converted from 12px 20px */
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.25rem; 
   transition: all 0.3s;
   background-color: #ff9eda;
-  box-shadow: 0.3125rem 0.3125rem 0 #333; /* Converted from 5px 5px 0 #333 */
+  box-shadow: 0.3125rem 0.3125rem 0 #333;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -486,7 +486,7 @@ header .navbar .nav li a.active {
     border-radius: 4px;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
-    display: inline-flex; /* Add this line */
+    display: inline-flex
   }
 
   #projecten h1{
