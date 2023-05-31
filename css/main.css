@@ -488,14 +488,7 @@ header .navbar .nav li a.active {
     transition: background-color 0.3s ease;
     display: inline-flex; /* Add this line */
   }
-
-  .styled li::before {
-    content: "🤔 ";
-    color: #009ec4;
-    text-shadow: none;
-    margin-right: 0.25rem; /* Adjust spacing if needed */
-  }
-
+  
   #projecten h1{
     font-size: 2.2rem;
   }
