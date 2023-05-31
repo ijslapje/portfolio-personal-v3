@@ -488,7 +488,7 @@ header .navbar .nav li a.active {
     transition: background-color 0.3s ease;
     display: inline-flex; /* Add this line */
   }
-  
+
   #projecten h1{
     font-size: 2.2rem;
   }
@@ -508,7 +508,7 @@ header .navbar .nav li a.active {
 
   #projecten .project-card .title-project h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     margin-top: 0;
