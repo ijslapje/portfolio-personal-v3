@@ -138,7 +138,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 
 header .navbar {
@@ -346,6 +346,7 @@ header .navbar .nav li a.active {
 }
 
 .filter-btn {
+  z-index: 999;
   padding: 50px 50px;
   font-size: 1.25rem;
   font-weight: bold;
@@ -434,7 +435,7 @@ header .navbar .nav li a.active {
 
 #projecten .project-card .title-project h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #fff;
   margin-top: 0;
