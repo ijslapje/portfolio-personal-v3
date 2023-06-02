@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 36px 0;
+  color: #333;
+  background-color: #cfe8ff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  animation: backgroundAnimation 20s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .shape {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: moveShape;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    pointer-events: none;
+  }
+  
+  .shape1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .shape2 {
+    top: 50%;
+    left: 40%;
+    animation-delay: 0.5s;
+  }
+  
+  .shape3 {
+    top: 90%;
+    left: 70%;
+    animation-delay: 1s;
+  }
+  
+  .shape4 {
+    top: 30%;
+    left: 80%;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes moveShape {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(10px, 10px);
+    }
+  }
+  
+  .hero {
+    position: relative;
+    background-color: #cff6ff;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  
+
+section {
+  padding: 48px 24px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 36px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40%;
+  background: #fffbc6;
+  background-size: 200% 200%;
+  transform: translateY(-50%) rotate(-3deg);
+  z-index: -1;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  min-width: 200px;
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 12px 20px;
+  transition: all 0.3s;
+  background-color: #ff9eda;
+  box-shadow: 5px 5px 0 #333;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+#timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.demo-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.demo-card {
+  width: 30%; /* Default width for larger screens */
+  height: 750px; /* Fixed height for all cards */
+  margin: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .demo-card {
+    width: 100%; /* Set width to 100% to stack cards vertically */
+    height: auto; /* Reset height to auto for responsive behavior */
+  }
+}
+
+.demo-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.demo-card .head {
+  display: flex;
+  align-items: center;
+  background-color: #db4437;
+  color: #fff;
+  padding: 15px;
+}
+
+.demo-card .head .number-box {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+  transition: transform 0.3s ease;
+}
+
+.demo-card:hover .head .number-box {
+  transform: rotate(360deg);
+}
+
+.demo-card .head h2 {
+  font-size: 1.2rem;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.demo-card .body {
+  position: relative;
+  padding: 15px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.demo-card .body p {
+  margin-bottom: 15px;
+}
+
+.demo-card .body img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.demo-card--step1 .head {
+  background-color: #ff74a1;
+}
+
+.demo-card--step2 .head {
+  background-color: #ff5d8d;
+}
+
+.demo-card--step3 .head {
+  background-color: #ff477a;
+}
+
+.demo-card--step4 .head {
+  background-color: #ff3166;
+}
+
+.demo-card--step5 .head {
+  background-color: #ff1b53;
+}
+
+.demo-card--step6 .head {
+  background-color: #ff0540;
+}
+
+.demo-card * {
+  user-select: none;
+  pointer-events: none;
+}
+
+.demo-card {
+  pointer-events: auto;
+}
