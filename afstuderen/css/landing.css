@@ -179,8 +179,8 @@ a {
 }
 
 .demo-card {
-  width: 30%; /* Default width for larger screens */
-  height: 750px; /* Fixed height for all cards */
+  width: 30%;
+  height: 750px;
   margin: 10px;
   background: #fff;
   box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
@@ -191,8 +191,8 @@ a {
 
 @media (max-width: 768px) {
   .demo-card {
-    width: 100%; /* Set width to 100% to stack cards vertically */
-    height: auto; /* Reset height to auto for responsive behavior */
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -238,7 +238,7 @@ a {
   position: relative;
   padding: 15px;
   text-align: left;
-  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 .demo-card .body p {
@@ -248,7 +248,10 @@ a {
 .demo-card .body img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 350px; 
+  object-fit: cover; 
+
+  margin-bottom: 10px;
 }
 
 .demo-card--step1 .head {
