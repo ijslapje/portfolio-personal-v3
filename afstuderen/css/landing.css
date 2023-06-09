@@ -97,6 +97,17 @@ body {
     background-color: #cff6ff;
     overflow: hidden;
     padding-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero p {
+    max-width: 50%;
+    text-align: justify;
+    margin-bottom: 70px;
   }
   
 
