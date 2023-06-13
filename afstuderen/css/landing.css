@@ -110,6 +110,10 @@ body {
     margin-bottom: 70px;
   }
   
+.intropage a{
+  text-decoration: underline;
+  color: #ff2aad;
+}
 
 section {
   padding: 48px 24px;
